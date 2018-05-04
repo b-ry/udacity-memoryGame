@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul.deck {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(4, 150px);
+  grid-gap: 20px 20px;
+}
+
+ul.deck li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cacaca;
+  border-radius: 4px;
+}

@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icons/icomoon.eot?fcsjh0');
+  src:  url('../icons/icomoon.eot?fcsjh0#iefix') format('embedded-opentype'),
+    url('../icons/icomoon.ttf?fcsjh0') format('truetype'),
+    url('../icons/icomoon.woff?fcsjh0') format('woff'),
+    url('../icons/icomoon.svg?fcsjh0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], 
+[class*=" icon-"],
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-pushpin:before {
+  content: "\e946";
+}
+.icon-wrench:before {
+  content: "\e991";
+}
+.icon-magic-wand:before {
+  content: "\e997";
+}
+.icon-trophy:before {
+  content: "\e99e";
+}
+.icon-gift:before {
+  content: "\e99f";
+}
+.icon-rocket:before {
+  content: "\e9a5";
+}
+.icon-fire:before {
+  content: "\e9a9";
+}
+.icon-airplane:before {
+  content: "\e9af";
+}
+.icon-truck:before {
+  content: "\e9b0";
+}
