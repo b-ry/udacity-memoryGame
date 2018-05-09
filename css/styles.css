@@ -19,3 +19,16 @@ ul.deck li {
   border: 1px solid #cacaca;
   border-radius: 4px;
 }
+
+li .icon {
+  font-size: 3rem;
+}
+
+/* Displaying card icon when clicked. */
+li .icon {
+  display: none;
+}
+
+li.open .icon {
+  display: block;
+}
