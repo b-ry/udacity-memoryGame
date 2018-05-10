@@ -1,10 +1,6 @@
-
 /*
  * Create a list that holds all of your cards
  */
-
-
- /* List of card class names*/
 let array = [
   "icon-pushpin",
   "icon-wrench",
@@ -20,10 +16,14 @@ let array = [
 function createCard(array) {
   const deck = document.querySelector('.deck');
   const card = document.createElement('li');
+  const cardItem = document.createElement('i');
   const fragment = document.createDocumentFragment();
-  card.classList.add('card');
-  const markup = `<i class="icon ${array}"></i>`;
-  card.innerHTML = markup;
+
+  card.setAttribute('class', 'card');
+  cardItem.setAttribute('class', `icon ${array}`);
+
+  card.appendChild(cardItem);
+
   fragment.appendChild(card);
   deck.appendChild(fragment);
 }
@@ -35,7 +35,7 @@ function generateCards() {
   }
 }
 
-generateCards()
+generateCards();
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
@@ -55,19 +55,17 @@ function shuffle(array) {
 // Array to keep track of cards opened.
 cardsOpened = [];
 
-const el = document.getElementsByClassName('card');
-const elToggle = document.getElementsByTagName('li')[0];
 
-for(let i = 0; i < el.length; i++) {
-  el[i].addEventListener('click', function() {
-    if (elToggle.classList.contains('open')) {
-      elToggle.classList.remove('open');
-    } else {
-      elToggle.classList.add('open');
-    }
+// Adding event listener 
+const allCards = document.querySelectorAll('li');
+
+
+for(let i = 0 ; i < allCards.length; i++) {
+  allCards[i].addEventListener('click', function() {
+    console.log('click');
   });
-  cardsOpened.push(el[i]);
 }
+
 
 /*
  * set up the event listener for a card. If a card is clicked:
